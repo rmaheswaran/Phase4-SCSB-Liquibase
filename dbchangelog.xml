@@ -19,64 +19,6 @@
         </createTable>  
    </changeSet>  
 
-    <changeSet id="2"  author="rathin">
-        <addColumn tableName="test_liquibase_table">
-            <column name="address" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
-
-     <changeSet id="3"  author="rathin">
-        <addColumn tableName="test_liquibase_table">
-            <column name="email_id" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
-
-     <changeSet id="4"  author="rathin">
-        <addColumn tableName="test_liquibase_table">
-            <column name="register_no" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
-
-    <changeSet  id="5"  author="rathin">  
-        <createTable  tableName="PROPERTIES">  
-            <column  name="id"  type="int">  
-                <constraints  primaryKey="true"  nullable="false"/>  
-            </column>  
-            <column  name="APPLICATION"  type="varchar(50)">  
-                <constraints  nullable="false"/>  
-            </column>
-            <column  name="PROFILE"  type="varchar(50)">  
-                <constraints  nullable="false"/>  
-            </column> 
-            <column  name="LABEL"  type="varchar(50)">  
-                <constraints  nullable="false"/>  
-            </column> 
-            <column  name="KEY"  type="varchar(50)">  
-                <constraints  nullable="false"/>  
-            </column> 
-            <column  name="VALUE"  type="varchar(1000)">  
-                <constraints  nullable="false"/>  
-            </column>   
-
-        </createTable>  
-   </changeSet>  
-
-<changeSet id="6"  author="moses">
-        <addColumn tableName="test_liquibase_table">
-            <column name="test_moses" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
-
-<changeSet id="7"  author="moses">
-        <addColumn tableName="test_liquibase_table">
-            <column name="test_moses_123" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
-
-<changeSet id="8"  author="moses">
-        <addColumn tableName="test_liquibase_table">
-            <column name="test_joel" type="varchar(255)" />
-        </addColumn>
-    </changeSet>
+  
 
 </databaseChangeLog>
