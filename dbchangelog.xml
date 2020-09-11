@@ -18,7 +18,11 @@
               defaultValueBoolean="true"/>  
         </createTable>  
    </changeSet>  
-
+ <changeSet id="2"  author="rathin">
+        <addColumn tableName="test_liquibase_table">
+            <column name="address" type="varchar(255)" />
+        </addColumn>
+    </changeSet>
   
 
 </databaseChangeLog>
