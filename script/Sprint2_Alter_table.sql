@@ -1,6 +1,8 @@
 --liquibase formatted sql
 --changeset Moses:2
 
+use recap;
+
 SET FOREIGN_KEY_CHECKS=0;
 
 ALTER TABLE item_t ADD  ims_location_id  INT Not Null ,
