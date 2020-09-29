@@ -6,7 +6,9 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">  
 
-  
+  <changeSet author="authorName" id=”id”>
+  <sqlFile path="script/Create_table_Properties.sql"/>
+</changeSet>
 
 
 </databaseChangeLog>
