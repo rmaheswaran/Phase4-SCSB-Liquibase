@@ -1,3 +1,6 @@
+--liquibase formatted sql
+--changeset Moses:1
+
 CREATE TABLE IF NOT EXISTS recap.ims_location_t (
 
 ims_location_id INT NOT NULL AUTO_INCREMENT,
