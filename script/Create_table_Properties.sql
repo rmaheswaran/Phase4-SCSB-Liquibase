@@ -1,8 +1,6 @@
- 
-
 CREATE TABLE IF NOT EXISTS recap.scsb_properties_t (
 
-properties_id INT NOT NULL AUTO_INCREMENT,
+scsb_properties_id INT NOT NULL AUTO_INCREMENT,
 
 p_key varchar (255) NOT NULL ,
 
@@ -24,10 +22,9 @@ created_by  varchar(255) NOT NULL,
 
 updated_by  varchar(255) ,
 
-PRIMARY KEY ( properties_id )
+PRIMARY KEY ( scsb_properties_id )
 
 );
-
 
 CREATE TABLE IF NOT EXISTS recap.ims_location_t (
 
