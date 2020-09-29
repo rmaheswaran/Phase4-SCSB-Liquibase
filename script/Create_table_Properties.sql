@@ -1,6 +1,6 @@
  
 
-CREATE TABLE IF NOT EXISTS scsb_properties_t (
+CREATE TABLE IF NOT EXISTS recap.scsb_properties_t (
 
 properties_id INT NOT NULL AUTO_INCREMENT,
 
@@ -29,7 +29,7 @@ PRIMARY KEY ( properties_id )
 );
 
 
-CREATE TABLE IF NOT EXISTS ims_location_t (
+CREATE TABLE IF NOT EXISTS recap.ims_location_t (
 
 ims_location_id INT NOT NULL AUTO_INCREMENT,
 
