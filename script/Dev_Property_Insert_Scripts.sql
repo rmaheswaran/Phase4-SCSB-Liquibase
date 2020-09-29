@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset Moses:1
+--changeset Moses:3
 
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('version.number','4',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 
@@ -11,7 +11,7 @@ INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`instit
 
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.app.service.home','http://52.203.96.232:9091',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.solr.doc.url','http://172.17.0.1:9090/',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
-# Duplicate INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.solr.doc.url','http://172.17.0.1:9090/',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
+
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.etl.url','http://172.17.0.1:9094/',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.circ.url','http://172.17.0.1:9095/',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('scsb.batch.schedule.url','http://172.17.0.1:9096/',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
@@ -305,9 +305,6 @@ INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`instit
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.bibdata.api.endpoint','https://qa-platform.nypl.org/api',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.bibdata.api.parameter','/v0.1/recap/nypl-bibs?barcode={barcode}&customercode={customercode}',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 
-# Duplicate INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.server.operator.user.id','htc_scsb',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
-# Duplicate INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.server.operator.password','m0Fg7xbm3ZPq5djD3gBHTu3mQYrBpf6U',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
-# Duplicate INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('oauth.token.api.url','https://isso.nypl.org/oauth/token',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.server.operator.location','',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 
 INSERT INTO `recap`.`scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ils.edd.patron.id','23333090796036',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
