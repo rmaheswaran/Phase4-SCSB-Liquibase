@@ -1,7 +1,9 @@
 --liquibase formatted sql
 --changeset Moses:1
 
-CREATE TABLE IF NOT EXISTS recap.ims_location_t (
+use recap;
+
+CREATE TABLE IF NOT EXISTS ims_location_t (
 
 ims_location_id INT NOT NULL AUTO_INCREMENT,
 
@@ -25,7 +27,7 @@ PRIMARY KEY ( ims_location_id )
 
 );
 
-CREATE TABLE IF NOT EXISTS recap.scsb_properties_t (
+CREATE TABLE IF NOT EXISTS scsb_properties_t (
 
 scsb_properties_id INT NOT NULL AUTO_INCREMENT,
 
