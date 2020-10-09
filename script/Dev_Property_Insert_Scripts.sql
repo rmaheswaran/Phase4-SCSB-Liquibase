@@ -146,6 +146,11 @@ INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_co
 INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ftp.submit.collection.report.dir','devops-recap.htcinc.com:2222/share/recap/reports/collection/submitCollection/p4tst',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ftp.ongoing.accession.collection.report.dir','devops-recap.htcinc.com:2222/share/recap/reports/collection/ongoinAccession/p4tst',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
 INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ftp.solr.reports.dir','devops-recap.htcinc.com:2222/share/recap/solr-reports/p4tst',NULL,NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.host', '172.17.0.1', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.username', 'rabbit', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.password', 'rabbit', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
+
+
 
 # PUL Specific 
 
@@ -215,6 +220,7 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.recall.request', 'scsbactivemq:topic:PUL.RecallT', 'PUL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.borrowdirect.request', 'scsbactivemq:topic:PUL.BorrowDirectT', 'PUL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'false', 'PUL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
 
 
 # CUL Specific
@@ -285,6 +291,7 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.recall.request', 'scsbactivemq:topic:CUL.RecallT', 'CUL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.borrowdirect.request', 'scsbactivemq:topic:CUL.BorrowDirectT', 'CUL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'false', 'CUL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
 
 # NYPL Specific 
 INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('protocol','REST',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
@@ -362,6 +369,7 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.recall.request', 'scsbactivemq:topic:NYPL.RecallT', 'NYPL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.borrowdirect.request', 'scsbactivemq:topic:NYPL.BorrowDirectT', 'NYPL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'true', 'NYPL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
 
 # Location Specific
 
