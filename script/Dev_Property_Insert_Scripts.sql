@@ -222,6 +222,12 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'false', 'PUL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
 
+## New Script From Hari
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.refile.endpoint.protocol', 'SIP2', '', 'PUL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('bibdata.format', 'MARC', '', 'PUL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.bibdata.api.auth', 'NoAuth', '', 'PUL', '', 'Y', now(), now(), 'Script', 'Script');
+
+
 
 # CUL Specific
 
@@ -292,6 +298,14 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.borrowdirect.request', 'scsbactivemq:topic:CUL.BorrowDirectT', 'CUL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'false', 'CUL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
+
+## New Script From Hari
+
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('bibdata.format', 'MARC', '', 'CUL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.bibdata.api.auth', 'NoAuth', '', 'CUL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.refile.endpoint.protocol', 'SIP2', '', 'CUL', '', 'Y', now(), now(), 'Script', 'Script'); 
+
+
 
 # NYPL Specific 
 INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('protocol','REST',NULL,'NYPL',NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
@@ -370,6 +384,15 @@ INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.topic.borrowdirect.request', 'scsbactivemq:topic:NYPL.BorrowDirectT', 'NYPL', 'Y', CURDATE(), CURDATE(), 'Script', 'Script');
 
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `institution_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.use.refile.for.checkin', 'true', 'NYPL', 'Y', '2020-09-15 00:00:00', '2020-09-15 00:00:00', 'Script', 'Script');
+
+
+## New Script From Hari
+
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('bibdata.format', 'SCSB', '', 'NYPL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.bibdata.api.auth', 'OAuth', '', 'NYPL', '', 'Y', now(), now(), 'Script', 'Script');
+INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `description`, `institution_code`, `ims_location_code`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('ils.refile.endpoint.protocol', 'REST', '', 'NYPL', '', 'Y', now(), now(), 'Script', 'Script');
+
+
 
 # Location Specific
 
