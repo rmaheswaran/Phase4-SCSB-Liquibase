@@ -149,7 +149,7 @@ INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_co
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.host', '172.17.0.1', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.username', 'rabbit', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
 INSERT INTO `scsb_properties_t` (`p_key`, `p_value`, `active`, `created_date`, `updated_date`, `created_by`, `updated_by`) VALUES ('spring.rabbitmq.password', 'rabbit', 'Y', '2020-10-07 00:00:00', '2020-10-07 00:00:00', 'Script', 'Script');
-
+INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('ongoing.matching.report.directory','/recap-vol/scsb-solr-client/reports/ongoingMatchingAlgorithmReports',NULL,NULL,NULL,'Y',NOW(),NOW(),'Script','Script');
 
 
 # PUL Specific 
