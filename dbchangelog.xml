@@ -6,8 +6,15 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">  
 
-  <changeSet author="authorName" id=”1”>
-  <sqlFile path="script/Create_table_Properties.sql"/>
+  <changeSet author="Rajesh" id=”1”>
+ 
+ INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
+VALUES ('RECAP', 'RECAP_LAS', '', 'Y', 'Script', NOW(), 'Script', NOW());
+INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
+VALUES ('HD', 'HARVARD_LAS', '', 'Y', 'Script', NOW(), 'Script', NOW());
+
+UPDATE ITEM_T SET IMS_LOCATION_ID = 1;
+    
 </changeSet>
 
 
