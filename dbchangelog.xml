@@ -6,7 +6,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">  
 
- <changeSet  id=1  author="Moses Test">  
+ <changeSet  id="1"  author="Moses Test">  
  
  INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
 VALUES ('RECAP_TEST', 'RECAP_LAS_TEST', '', 'Y', 'Script', NOW(), 'Script', NOW());
