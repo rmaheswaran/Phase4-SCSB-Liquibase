@@ -1,0 +1,12 @@
+--liquibase formatted sql
+--changeset Moses-Insert-Script:3
+
+use recap;
+
+INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
+VALUES ('RECAP_Test', 'RECAP_LAS_test', '', 'Y', 'Script', NOW(), 'Script', NOW());
+INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
+VALUES ('HD_test', 'HARVARD_LAS_test', '', 'Y', 'Script', NOW(), 'Script', NOW());
+
+--changeset Moses-Insert-Script:4
+UPDATE ITEM_T SET IMS_LOCATION_ID = 1;
