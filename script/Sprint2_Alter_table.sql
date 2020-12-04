@@ -2,7 +2,7 @@
 
 use recap;
 
---changeset Moses:2
+--changeset Moses:1
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -14,7 +14,7 @@ SET FOREIGN_KEY_CHECKS=1;
 ALTER TABLE Institution_t ADD  ils_protocol varchar(10) Not Null;
 
 
---changeset Moses:5
+--changeset Moses:2
 
 UPDATE ITEM_T SET IMS_LOCATION_ID = 1;
 
