@@ -1,5 +1,4 @@
 --liquibase formatted sql
---changeset Moses:2
 
 use recap;
 
