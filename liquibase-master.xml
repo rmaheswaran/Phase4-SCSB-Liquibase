@@ -2,7 +2,7 @@
 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
 <include file="script/Sprint2_Create_table.sql"/>
 <include file="script/Sprint2_Alter_table.sql"/> 
-<include file="script/Sprint2_imslocation_script.sql"/>
+#<include file="script/Sprint2_imslocation_script.sql"/>
 <include file="dbchangelog.xml"/> 
  
 </databaseChangeLog>
