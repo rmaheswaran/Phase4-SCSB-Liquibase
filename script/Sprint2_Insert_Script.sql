@@ -21,3 +21,10 @@ INSERT INTO `generic_patron_t` (`generic_patron_id`, `requesting_inst_id`, `item
 INSERT INTO `generic_patron_t` (`generic_patron_id`, `requesting_inst_id`, `item_own_inst_id`, `edd_generic_patron`, `retrieval_generic_partron`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('8', '1', '3', '23333090796010', '70620957062095', 'Script', '2020-09-25 00:00:00', 'Script', '2020-09-25 00:00:00');
 INSERT INTO `generic_patron_t` (`generic_patron_id`, `requesting_inst_id`, `item_own_inst_id`, `edd_generic_patron`, `retrieval_generic_partron`, `created_by`, `created_date`, `updated_by`, `updated_date`) VALUES ('9', '2', '3', '23333090796028', '70620917062091', 'Script', '2020-09-25 00:00:00', 'Script', '2020-09-25 00:00:00');
 
+ --changeset Hari:3
+INSERT INTO `job_param_data_t` (`PARAM_NAME`, `PARAM_VALUE`, `RECORD_NUM`) VALUES ('imsDepositoryCodes', 'RECAP', '2');
+INSERT INTO `job_param_data_t` (`PARAM_NAME`, `PARAM_VALUE`, `RECORD_NUM`) VALUES ('imsDepositoryCodes', 'RECAP', '3');
+INSERT INTO `job_param_data_t` (`PARAM_NAME`, `PARAM_VALUE`, `RECORD_NUM`) VALUES ('imsDepositoryCodes', 'RECAP', '4'); 
+ 
+ 
+ 
