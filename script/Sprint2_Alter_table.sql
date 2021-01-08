@@ -18,4 +18,8 @@ ALTER TABLE Institution_t ADD  ils_protocol varchar(10) Not Null;
 
 UPDATE ITEM_T SET IMS_LOCATION_ID = 1;
 
+--changeset Rajesh:3
+ALTER TABLE `generic_patron_t` DROP FOREIGN KEY `generic_patron_t_ibfk_1`;
+ALTER TABLE `generic_patron_t` DROP INDEX `requesting_inst_id` ;
+ALTER TABLE `generic_patron_t` ADD FOREIGN KEY (requesting_inst_id) REFERENCES institution_t (institution_id);
 
