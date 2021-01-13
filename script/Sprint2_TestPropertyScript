@@ -1,1 +1,0 @@
-INSERT INTO `scsb_properties_t` (`p_key`,`p_value`,`description`,`institution_code`,`ims_location_code`,`active`,`created_date`,`updated_date`,`created_by`,`updated_by`) VALUES ('spring.datasource.url','{{BDURL}}','',NULL,NULL,'Y',CURDATE(),CURDATE(),'Script','Script');
