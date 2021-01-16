@@ -6,22 +6,18 @@ use recap;
 
 SET FOREIGN_KEY_CHECKS=0;
 
-ALTER TABLE item_t ADD  ims_location_id  INT Not Null , ADD COLUMN `LEGACY_OWNING_INST_ITEM_ID` VARCHAR(45) DEFAULT 1 COLLATE utf8mb4_unicode_ci,
-ADD FOREIGN KEY (ims_location_id) REFERENCES ims_location_t(ims_location_id);
+ALTER TABLE ITEM_T ADD  IMS_LOCATION_ID  INT Not Null DEFAULT 1 , ADD COLUMN `LEGACY_OWNING_INST_ITEM_ID` VARCHAR(45) COLLATE utf8mb4_unicode_ci,
+ADD FOREIGN KEY (IMS_LOCATION_ID) REFERENCES IMS_LOCATION_T(IMS_LOCATION_ID);
 
 SET FOREIGN_KEY_CHECKS=1;
 
-ALTER TABLE Institution_t ADD  ils_protocol varchar(10) Not Null;
+ALTER TABLE INSTITUTION_T ADD  ILS_PROTOCOL varchar(10) Not Null;
 
-
---changeset Moses:2
-
-UPDATE ITEM_T SET IMS_LOCATION_ID = 1;
 
 --changeset Rajesh:3
-ALTER TABLE `generic_patron_t` DROP FOREIGN KEY `generic_patron_t_ibfk_1`;
-ALTER TABLE `generic_patron_t` DROP INDEX `requesting_inst_id` ;
-ALTER TABLE `generic_patron_t` ADD FOREIGN KEY (requesting_inst_id) REFERENCES institution_t (institution_id);
+ALTER TABLE `GENERIC_PATRON_T` DROP FOREIGN KEY `generic_patron_t_ibfk_1`;
+ALTER TABLE `GENERIC_PATRON_T` DROP INDEX `requesting_inst_id` ;
+ALTER TABLE `GENERIC_PATRON_T` ADD FOREIGN KEY (requesting_inst_id) REFERENCES institution_t (institution_id);
 
 --changeset Suresh:4
 ALTER TABLE BIBLIOGRAPHIC_T DROP  PRIMARY KEY;
