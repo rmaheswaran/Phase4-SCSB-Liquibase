@@ -6,7 +6,7 @@ use recap;
 
 SET FOREIGN_KEY_CHECKS=0;
 
-ALTER TABLE item_t ADD  ims_location_id  INT Not Null , ADD COLUMN `LEGACY_OWNING_INST_ITEM_ID` VARCHAR(45) COLLATE utf8mb4_unicode_ci,
+ALTER TABLE item_t ADD  ims_location_id  INT Not Null , ADD COLUMN `LEGACY_OWNING_INST_ITEM_ID` VARCHAR(45) DEFAULT 1 COLLATE utf8mb4_unicode_ci,
 ADD FOREIGN KEY (ims_location_id) REFERENCES ims_location_t(ims_location_id);
 
 SET FOREIGN_KEY_CHECKS=1;
