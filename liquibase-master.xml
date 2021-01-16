@@ -3,6 +3,8 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liqui
 <include file="script/Sprint2_Create_table.sql"/>
 <include file="script/Sprint2_Alter_table.sql"/>
 <include file="script/Sprint2_Insert_Script.sql"/> 
+<include file="script/Sprint2_TestPropertyScript.sql"/>
+ 
 
  
 </databaseChangeLog>
