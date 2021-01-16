@@ -3,105 +3,105 @@
 
 use recap;
 
-CREATE TABLE IF NOT EXISTS ims_location_t (
+CREATE TABLE IF NOT EXISTS IMS_LOCATION_T (
 
-ims_location_id INT NOT NULL AUTO_INCREMENT,
+IMS_LOCATION_ID INT NOT NULL AUTO_INCREMENT,
 
-ims_location_code varchar(45) NOT NULL UNIQUE,
+IMS_LOCATION_CODE VARCHAR(45) NOT NULL UNIQUE,
 
-ims_location_name varchar(255) NOT NULL, 
+IMS_LOCATION_NAME VARCHAR(255) NOT NULL,
 
-description  varchar(255) ,
+DESCRIPTION  VARCHAR(255) ,
 
-active char(1)  NOT NULL,
+ACTIVE CHAR(1)  NOT NULL,
 
-created_by varchar(255) NOT NULL,
+CREATED_BY VARCHAR(255) NOT NULL,
 
-created_date timestamp NOT NULL ,
+CREATED_DATE TIMESTAMP NOT NULL ,
 
-updated_by  varchar(255) NOT NULL ,
+UPDATED_BY  VARCHAR(255) NOT NULL ,
 
-updated_date timestamp NOT NULL,
+UPDATED_DATE TIMESTAMP NOT NULL,
 
-PRIMARY KEY ( ims_location_id )
-
-);
-
-CREATE TABLE IF NOT EXISTS scsb_properties_t (
-
-scsb_properties_id INT NOT NULL AUTO_INCREMENT,
-
-p_key varchar (255) NOT NULL ,
-
-p_value varchar(1500) NOT NULL  ,
-
-description  varchar(255) ,
-
-institution_code  varchar(50) ,
-
-ims_location_code varchar(50) ,
-
-active char(1)  NOT NULL,
-
-created_date timestamp NOT NULL ,
-
-updated_date timestamp ,
-
-created_by  varchar(255) NOT NULL,
-
-updated_by  varchar(255) ,
-
-PRIMARY KEY ( scsb_properties_id )
+PRIMARY KEY ( IMS_LOCATION_ID )
 
 );
 
-CREATE TABLE IF NOT EXISTS Institution_ims_location_t (
+CREATE TABLE IF NOT EXISTS SCSB_PROPERTIES_T (
 
-Institution_ims_location_id   INT NOT NULL AUTO_INCREMENT,
+SCSB_PROPERTIES_ID INT NOT NULL AUTO_INCREMENT,
 
-institution_id  INT  NOT NULL UNIQUE,
+P_KEY VARCHAR (255) NOT NULL ,
 
-ims_location_id INT NOT NULL, 
+P_VALUE VARCHAR(1500) NOT NULL  ,
 
-active char(1)  NOT NULL,
+DESCRIPTION  VARCHAR(255) ,
 
-created_by varchar(255) NOT NULL,
+INSTITUTION_CODE  VARCHAR(50) ,
 
-created_date timestamp NOT NULL ,
+IMS_LOCATION_CODE VARCHAR(50) ,
 
-updated_by  varchar(255) NOT NULL ,
+ACTIVE CHAR(1)  NOT NULL,
 
-updated_date timestamp NOT NULL,
+CREATED_DATE TIMESTAMP NOT NULL ,
 
-PRIMARY KEY ( Institution_ims_location_id ),
-FOREIGN KEY (institution_id) REFERENCES institution_t (institution_id),
-FOREIGN KEY (ims_location_id) REFERENCES ims_location_t (ims_location_id)
+UPDATED_DATE TIMESTAMP ,
+
+CREATED_BY  VARCHAR(255) NOT NULL,
+
+UPDATED_BY  VARCHAR(255) ,
+
+PRIMARY KEY ( SCSB_PROPERTIES_ID )
 
 );
 
-CREATE TABLE IF NOT EXISTS generic_patron_t (
+CREATE TABLE IF NOT EXISTS INSTITUTION_IMS_LOCATION_T (
 
-generic_patron_id   INT NOT NULL AUTO_INCREMENT,
+INSTITUTION_IMS_LOCATION_ID   INT NOT NULL AUTO_INCREMENT,
 
-requesting_inst_id  INT  NOT NULL UNIQUE,
+INSTITUTION_ID  INT  NOT NULL UNIQUE,
 
-item_own_inst_id INT NOT NULL, 
+IMS_LOCATION_ID INT NOT NULL,
 
-edd_generic_patron varchar(20) ,
+ACTIVE CHAR(1)  NOT NULL,
 
-retrieval_generic_partron varchar(20),
+CREATED_BY VARCHAR(255) NOT NULL,
 
-created_by varchar(255) NOT NULL,
+CREATED_DATE TIMESTAMP NOT NULL ,
 
-created_date timestamp NOT NULL ,
+UPDATED_BY  VARCHAR(255) NOT NULL ,
 
-updated_by  varchar(255) NOT NULL ,
+UPDATED_DATE TIMESTAMP NOT NULL,
 
-updated_date timestamp NOT NULL,
+PRIMARY KEY ( INSTITUTION_IMS_LOCATION_ID ),
+FOREIGN KEY (INSTITUTION_ID) REFERENCES INSTITUTION_T (INSTITUTION_ID),
+FOREIGN KEY (IMS_LOCATION_ID) REFERENCES IMS_LOCATION_T (IMS_LOCATION_ID)
 
-PRIMARY KEY ( generic_patron_id ),
-FOREIGN KEY (requesting_inst_id) REFERENCES institution_t (institution_id),
-FOREIGN KEY (item_own_inst_id) REFERENCES institution_t (institution_id)
+);
+
+CREATE TABLE IF NOT EXISTS GENERIC_PATRON_T (
+
+GENERIC_PATRON_ID   INT NOT NULL AUTO_INCREMENT,
+
+REQUESTING_INST_ID  INT  NOT NULL UNIQUE,
+
+ITEM_OWN_INST_ID INT NOT NULL,
+
+EDD_GENERIC_PATRON VARCHAR(20) ,
+
+RETRIEVAL_GENERIC_PARTRON VARCHAR(20),
+
+CREATED_BY VARCHAR(255) NOT NULL,
+
+CREATED_DATE TIMESTAMP NOT NULL ,
+
+UPDATED_BY  VARCHAR(255) NOT NULL ,
+
+UPDATED_DATE TIMESTAMP NOT NULL,
+
+PRIMARY KEY ( GENERIC_PATRON_ID ),
+FOREIGN KEY (REQUESTING_INST_ID) REFERENCES INSTITUTION_T (INSTITUTION_ID),
+FOREIGN KEY (ITEM_OWN_INST_ID) REFERENCES INSTITUTION_T (INSTITUTION_ID)
 
 );
 
