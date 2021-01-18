@@ -46,3 +46,8 @@ INSERT INTO ITEM_HOLDINGS_T
 FROM ITEM_T I, HOLDINGS_T H, ITEM_HOLDINGS_HISTORY_T  IH , (SELECT @ROWNUM := 0) R
  WHERE I.OWNING_INST_ID = IH.ITEM_INST_ID AND I.OWNING_INST_ITEM_ID = IH.OWNING_INST_ITEM_ID
 AND H.OWNING_INST_ID = IH.HOLDINGS_INST_ID AND H.OWNING_INST_HOLDINGS_ID = IH.OWNING_INST_HOLDINGS_ID);
+
+--changeset Suresh:5
+
+INSERT INTO `ims_location_t`(`ims_location_code`,`ims_location_name`,`description`,`active`,`created_by`,`created_date`,`updated_by`,`updated_date`)
+VALUES ('UN', 'UNKNOWN', '', 'Y', 'Script', NOW(), 'Script', NOW());
